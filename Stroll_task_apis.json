@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "44791cae-7371-4f0c-9421-db12af5b0aa8",
+		"name": "Stroll task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9930893"
+	},
+	"item": [
+		{
+			"name": "Get Questions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/questions",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Questions By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/questions/1",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"questions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Questions By Region ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/questions/region/1",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"questions",
+						"region",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cycle Config",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/configs",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"configs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cycle Config By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/configs/1",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"configs",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Config by ID",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dayCycle\": 1,\r\n    \"hourCycle\": 19\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/configs/1/update",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"configs",
+						"1",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Question by ID",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"correctAnswer\": \"a\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/questions/1/update",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"questions",
+						"1",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
